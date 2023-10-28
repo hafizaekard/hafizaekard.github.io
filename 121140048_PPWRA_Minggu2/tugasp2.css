@@ -1,0 +1,54 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+.profil {
+    padding: 10px;
+    background-color: #ff94d8;  
+}
+
+.profil ul li {
+    display: inline-block;
+    color: #fff833;
+}
+
+.container {
+    width: 80%;
+    margin:0 auto;
+}
+
+.foto_profile{
+    border-radius: 50%; 
+}
+
+.infoku {
+    padding: 5px;
+    background-color: #dcabf3 ;
+    list-style: none;
+    text-align: right;
+}
+.infoku li {
+    display: inline-block;
+    color:#fff833;
+}
+.infoku li a {
+    padding: 10px 14px;
+}
+
+.tentangku {
+    background-color: #f1d2ff ;
+    margin: 0px;
+    padding: 10px 14px;
+    border
+}
+
+.video_container {
+    padding-left: 30%;
+}
