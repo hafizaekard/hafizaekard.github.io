@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            h2 {
+            margin: 0px; 
+            text-align: left important;
+            
+            }
+            
+            .logoitera {
+                width: 50px;
+            }
+            
+            main {
+                padding: 10px 0px;
+            }
+         
+            .navbar {
+                display: flex; 
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: rgb(250, 158, 255);
+                align-items: center; 
+                height: 60px;
+                padding: 0px 20px; 
+                font-weight: bold;
+                overflow: hidden;
+            }
+            
+            .gotonavbar {
+                display: flex;
+            }
+            
+            .gotonavbar a{
+                text-decoration: none; 
+                color: rgb(102, 0, 0);
+                margin: 0px 20px;
+            }
+            
+            .gotonavbar a:hover { 
+                transform: scale(1.1)
+            }
+        
+            .navcontact {
+                border-radius: 20px;
+                border: 1px white solid; 
+                background-color: rgb(251, 255, 20); 
+                padding: 7px 15px;
+                font-weight: bold;
+            }
+                
+            .profilphoto {
+                max-width: 100%; 
+                width: 150px; 
+                margin-left: 70px; 
+                border-radius: 10px;
+            }
+                
+            .information { 
+                width: 75%; 
+                text-align: justify;
+            }
+                
+            section {
+                margin: 15px 20px 0px 20px;
+                padding: 20px; 
+                border: 1px solid rgb(139, 139, 139); 
+                border-radius: 10px; 
+                box-shadow: inset 1px 1px 5px rgb(218, 212, 212); 
+                overflow: hidden;
+            }
+        
+            .aboutme {
+                display: flex;
+                overflow: hidden;
+            }
+        
+            .infocontact {
+                border: 1px solid rgb(202, 202, 202);
+                border-radius: 5px;
+                padding: 15px;
+                background-color: rgb(255, 255, 0);
+                color: rgb(0, 0, 0);
+                margin-top: 10px;
+                font-weight: bold;
+            }
+                
+            table {
+                width: 100%;
+                padding: 5px;
+                margin-top: 20px; 
+                border-collapse: collapse;
+            }
+                
+            table,
+            th,
+            td {
+                border: 1px solid rgb(150, 142, 142); 
+                text-align: center;
+            }
+        
+            table th {
+                background-color: rgb(250, 158, 255);
+                color: rgb(0, 0, 0);
+                height: 40px;
+            }
+        
+            .theproject {
+                display: grid; 
+                grid-template-columns: 30% 30% 30%; 
+                column-gap: 30px; 
+                justify-content: center; 
+                margin-top: 20px;
+            }
+        
+            .theproject img { 
+                width: 100%; 
+                border-radius: 10px;
+            }
+        
+            .theproject img:hover { 
+                transform: scale(1.05);
+            }
+                
+            button { 
+                cursor: pointer;
+            }
+                
+            button:hover { 
+                opacity: 0.9;
+            }
+        
+                footer {
+                margin-top: 10px; 
+                background-color: rgb(77, 0, 0); 
+                color: white; 
+                justify-content: center; 
+                height: 50px; 
+                display: flex; 
+                align-items: center;
+            }
+        
+        @media only screen and (max-width: 600px) {
+            header nav {
+                flex-direction: column;
+            }
+            ul {
+                display: flex;
+                flex-direction: collumn;
+            }
+        }
+    </style>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale-1.0" /> 
+        <title>Tugas Praktikum Pertemuan 3</title>
+        <link rel="stylesheet" href="TugasP3.css" /> 
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <img class="logoitera" src="logo itera.jpeg" alt="" />
+                <div class="gotonavbar"> 
+                    <a href="http://www.Itera.ac.id/">Kampus</a>
+                    <a href="https://www.itera.ac.id/teknik-informatika/">Prodi</a>
+                    <a href="https://www.linkedin.com/in/hafiza-eka-ramadhini-5a71b8246/">LinkedIn</a>
+                </div>
+                <button class="navcontact">Kontak</button>
+            </nav>
+         </header>
+    
+    <main>
+        <section class="aboutme" id="section1">
+            <div class="information">
+                <h2>Hai semua, ini Hafiza</h2>
+                <p> Saya adalah mahasiswa ITERA prodi Teknik Informatika. 
+                    Saat ini saya menempuh semester 5. Saya memiliki ketertarikan dengan mata kuliah pemrograman web. 
+                    Saya sangat senang karena adanya praktikum pemrograman web yang menurut saya akan membuat saya lebih paham dan 
+                    semangat untuk mendalami materi mengenai pengembangan web.
+                </p>
+                <button class="infocontact">Hubungi saya</button>
+            </div>
+            <img class="profilphoto" src="myphoto.png" alt="Foto profil" />
+        </section>
+
+        <section class="myexperience" id="section2">
+            
+            <h4>PENGALAMAN KERJA</h4>
+            <table border="1">
+                <tr>
+                    <th rowspan="1">NO</th>
+                    <th rowspan="1">PENGALAMAN</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Peserta Diponegoro UI/UX Competition Annual Informatis Competition 2023</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mentor First Gathering IF'22</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Panitia konsumsi malam keakraban IF'21 </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>&copy; copyright 2023</footer>
+    </body>
+</html>
